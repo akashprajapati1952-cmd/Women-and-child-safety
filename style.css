@@ -1,0 +1,232 @@
+*{
+  padding:0;
+  margin:0;
+  text-decoration:none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&display=swap');
+
+#container{
+  display: flex;
+  flex-direction: column;
+  width:100vw;
+}
+#header{
+  display: flex;
+  width:100%;
+  height:10vh;
+  background:red;
+  box-sizing: border-box;
+  padding:5px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  left:0;
+}
+#header img{
+  height:30px;
+  border-radius:990px;
+  padding: 0;
+}
+#header>div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#home{
+  padding:2px 10px;
+  font-size:10px;
+  border-radius: 990px;
+  background: lightblue;
+  border: 1px solid black;
+}
+p{
+  font-size: 10px;
+  font-family: "Hind", Sans-Serif;
+  font-weight:400;
+  font-style: normal;
+}
+#content{
+  display: flex;
+  box-sizing: border-box;
+  background: lightgreen;
+  min-height:100vh;
+  padding:10px;
+  padding-top:10vh; !important
+  
+  overflow: auto;
+  flex-direction: column;
+  align-items:  center;
+}
+#content> img{
+  width:60%;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  font-size: 10px;
+}
+#submit, select{
+  font-size: 10px;
+}
+#form div{
+  display: flex;
+  flex-direction: column;
+}
+.officerDetails{
+  display:flex;
+  gap:5px;
+  border:2px solid yellow;
+  width:320px;
+  height: auto;
+  min-height:150px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.officerDetails img{
+  width:30%;
+  height:auto;
+  min-width:0;
+  object-fit: cover;
+}
+.officerDetails p{
+  font-size: 10px;
+  font-weight: 400;
+}
+.officerDetails div{
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+  padding:15px 10px;
+}
+
+  
+
+#cardBody{
+  
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px;
+  gap:20px;
+}
+@media(min-width:320px){
+  p,label,#submit,select{
+    font-size:16px;
+  }
+}
+@media(min-width:640px){
+  p, label, #submit, select{
+    font-size:25px;
+  }
+  #form{
+    gap:15px;
+  }
+  select{
+    padding:5px;
+    border:1px solid black;
+    background:none;
+  }
+  #home{
+    font-size:20px;
+    padding:4px 20px;
+  }
+  #header{
+    padding:20px;
+  }
+  #header img{
+    height:50px;
+  }
+  #cardBody{
+    align-items:center;
+  }
+  .officerDetails p{
+    font-size:20px;
+  }
+  .officerDetails{
+    width:500px;
+  }
+
+}
+@media(min-width:768px){
+  p, label, #submit, select{
+    font-size:35px;
+  }
+  #home{
+    font-size:30px;
+    padding:6px 30px;
+  }
+  #header img{
+    height:60px;
+  }
+  #form{
+    gap:15px;
+  }
+
+  select{
+    border:1px solid black;
+   background:none;
+  }
+  
+  .officerDetails{
+    width:600px;
+  }
+  .officerDetails p{
+    font-size:25px;
+  }
+}
+
+@media(min-width:1024px){
+  p, label, #submit, select{
+    font-size:45px;
+  }
+  #content img{
+    width:30%;
+  }
+  #header img{
+    height:90px;
+  }
+  #home{
+    font-size:40px;
+    padding:8px 40px;
+  }
+  #form{
+    gap:15px;
+  }
+  select{
+    padding:10px;
+    border:2px solid black;
+    background:none;
+  }
+  #cardBody{
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center
+  }
+}
+
+@media(min-width:1280px){
+  p, label, #submit, select{
+    font-size:55px;
+  }
+  #form{
+    gap:20px;
+  }
+  #home{
+    font-size:50px;
+    padding:10px 50px;
+  }
+  #header img{
+    height:100px;
+  }
+  select{
+    padding:10px;
+    border:2px solid black;
+    background:none;
+  }
+}
+#notFound{
+  color:red;
+}
+                                                                                                                                                                  

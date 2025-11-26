@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hi">
+  <head>
+    <title>महिला एवं बाल सहायता केन्द्र</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <button id="home" type="button">होम</button>
+        <div>
+          <p>मदद के लिए कॉल करे</p>
+          <img src="images/images.png" alt="phone_logo" height="40px">
+        </div>
+      </div>
+      <div id="content">
+        <img src="images/image.png">
+        <p>महिला एवं बाल संरक्षण केंद्र में आपका स्वागत है। कृपया अपने क्षेत्र में महिला एवं बाल संरक्षण अधिकारियों के बारे में जानकारी प्राप्त करने के लिए अपना क्षेत्र चुनें।</p>
+        <form id="form">
+          <div>
+            <label for="district">अपना जिला चुनें।</label>
+            <select id="district">
+              <option disabled selected>अपना जिला चुनें</option>
+              <option value='agra'>आगरा</option>
+              <option value='aligarh'>अलीगढ</option>
+              <option value='ambedkar nagar'>अम्बेडकर नगर</option>
+              <option value='amethi'>अमेठी</option>
+              <option value='amroha'>अमरोहा</option>
+              <option value='auraiya'>औरैया</option>
+              <option value='aajamgarh'>आजमगढ़</option>
+              <option value='baagpat'>बागपत</option>
+              <option value='bahraich'>बहराइच</option>
+              <option value='baliya'>बलिया</option>
+              <option value='balrampur'>बलरामपुर</option>
+              <option value='banda'>बांदा</option>
+              <option value='badayu'>बदायूं</option>
+              <option value='barabanki'>बाराबंकी</option>
+              <option value='bareli'>बरेली</option>
+              <option value='basti'>बस्ती</option>
+              <option value='bhadohi'>भदोही</option>
+              <option value='bijnaur'>बिजनौर</option>
+              <option value='bundelkhand'>बुलंदशहर</option>
+              <option value='chandauli'>चंदौली</option>
+              <option value='chitrakut'>चित्रकूट</option>
+              <option value='devariya'>देवरिया</option>
+              <option value='eta'>एटा</option>
+              <option value='itawa'>इटावा</option>
+              <option value='faizabad'>फैजाबाद (अयोध्या)</option>
+              <option value='farukkabad'>फर्रुखाबाद</option>
+              <option value='fatehpur'>फतेहपुर</option>
+              <option value='firozabad'>फिरोजाबाद</option>
+              <option value='gautam buddha nagar'>गौतम बुद्ध नगर (नोएडा)</option>
+              <option value='gajiyabad'>गाजियाबाद</option>
+              <option value='gajipur'>गाजीपुर</option>
+              <option value='gonda'>गोंडा</option>
+              <option value='gorakpur'>गोरखपुर</option>
+              <option value='hameerpur'>हमीरपुर</option>
+              <option value='hapur'>हापुड़</option>
+              <option value='hardoi'>हरदोई</option>
+              <option value='haathras'>हाथरस</option>
+              <option value='jalaun'>जालौन</option>
+              <option value='jaunpur'>जौनपुर</option>
+              <option value='jhansi'>झांसी</option>
+              <option value='kannauj'>कन्नौज</option>
+              <option value='kanpur dehat'>कानपुर देहात</option>
+              <option value='kanpur sahar'>कानपुर नगर</option>
+              <option value='kaasganj'>कासगंज</option>
+              <option value='kausambi'>कौशांबी</option>
+              <option value='kushinagar'>कुशीनगर</option>
+              <option value='lakhimpur khiri'>लखीमपुर खीरी</option>
+              <option value='lalitpur'>ललितपुर</option>
+              <option value='lucknow'>लखनऊ</option>
+              <option value='maharajganj'>महाराजगंज</option>
+              <option value='mahoba'>महोबा</option>
+              <option value='mainpuri'>मैनपुरी</option>
+              <option value='mathura'>मथुरा</option>
+              <option value='mau'>मऊ</option>
+              <option value='meeruth'>मेरठ</option>
+              <option value='mirjapur'>मिर्जापुर</option>
+              <option value='muradabad'>मुरादाबाद</option>
+              <option value='mujaffarnagar'>मुजफ्फरनगर</option>
+              <option value='pilibhit'>पीलीभीत</option>
+              <option value='pratapgarh'>प्रतापगढ़</option>
+              <option value='raibareli'>रायबरेली</option>
+              <option value='rampur'>रामपुर</option>
+              <option value='saharanpur'>सहारनपुर</option>
+              <option value='sambhal'>संभल</option>
+              <option value='sant kabeer nagar'>संत कबीर नगर</option>
+              <option value='shahjahapur'>शाहजहांपुर</option>
+              <option value='shravasti'>श्रावस्ती</option>
+              <option value='shiddharthnagar'>सिद्धार्थनगर</option>
+              <option value='seetapur'>सीतापुर</option>
+              <option value='sonabhadra'>सोनभद्र</option>
+              <option value='sultanpur'>सुल्तानपुर</option>
+              <option value='unnao'>उन्नाव</option>
+              <option value='varanasi'>वाराणसी</option>
+              <option value='prayagraj'>प्रयागराज</option>
+            </select>
+          </div>
+          <div>
+            <label for="block">अपना ब्लाॅक चुनें।</label>
+            <select id="block">
+              <option selected disabled value="" >अपना ब्लाॅक चुनें।</option>
+            </select>
+          </div>
+          <button id="submit" type="button">submit</button>
+        </form>
+        <p id='notFound'></p>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
