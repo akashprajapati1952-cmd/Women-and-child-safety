@@ -12,16 +12,17 @@
         <button id="home" type="button">होम</button>
         <div>
           <p>मदद के लिए कॉल करे</p>
-          <img src="images.png" alt="phone_logo" height="40px">
+          <img src="images/images.png" alt="phone_logo" height="40px">
         </div>
       </div>
       <div id="content">
-        <img src="image.png">
+        <img src="images/image.png">
         <p>महिला एवं बाल संरक्षण केंद्र में आपका स्वागत है। कृपया अपने क्षेत्र में महिला एवं बाल संरक्षण अधिकारियों के बारे में जानकारी प्राप्त करने के लिए अपना क्षेत्र चुनें।</p>
         <form id="form">
           <div>
-            <label for="district">अपना जिला चुनें।</label>
-            <select id="district">
+            <label for="districtName">अपना जिला चुनें।</label>
+            <input list="district" id="districtName" placeholder="अपने जिले का नाम लिखें">
+            <datalist id="district">
               <option disabled selected>अपना जिला चुनें</option>
               <option value='agra'>आगरा</option>
               <option value='aligarh'>अलीगढ</option>
@@ -97,20 +98,22 @@
               <option value='unnao'>उन्नाव</option>
               <option value='varanasi'>वाराणसी</option>
               <option value='prayagraj'>प्रयागराज</option>
-            </select>
+            </datalist>
           </div>
           <div>
             <label for="block">अपना ब्लाॅक चुनें।</label>
-            <select id="block">
-              <option selected disabled value="" >अपना ब्लाॅक चुनें।</option>
-            </select>
+            <input list="blocks" id="block" placeholder="अपने ब्लाॅक का नाम लिखें">
+            <datalist id="blocks">
+              <option value=""></option>
+            </datalist>
           </div>
           <button id="submit" type="button">submit</button>
         </form>
         <p id='notFound'></p>
         
       </div>
+      <a>About us</a>
     </div>
     <script src="script.js"></script>
   </body>
-</html>
+</html>              
