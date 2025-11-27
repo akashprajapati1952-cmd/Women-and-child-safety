@@ -82,10 +82,10 @@ document.getElementById('home').addEventListener('click',function(){
   });
   
 const blocklist=function(){
-  const district=this.value;
+  let district=this.value.toLowerCase();
   console.log(district)
-  const selectBlock=document.getElementById("block");
-  selectBlock.innerHTML=`<option disabled selected value="" >अपना ब्लाॅक चुनें।</option>`
+  const selectBlock=document.getElementById("blocks");
+  selectBlock.innerHTML="";
   if(blockdata[district]){
     blockdata[district].forEach(function(dist){
       const opt=document.createElement("option");
@@ -94,7 +94,7 @@ const blocklist=function(){
       selectBlock.appendChild(opt);
     })
   }}
-document.getElementById('district').addEventListener('change',blocklist);
+document.getElementById('districtName').addEventListener('input',blocklist);
 document.getElementById('block').addEventListener('change',function(){
   blk=this.value;
   console.log(blk)
@@ -150,6 +150,3 @@ const details=function(){
   }
 };
 document.getElementById('submit').addEventListener('click',details);
-  
-
-                                                                                                                                                                  
